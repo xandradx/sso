@@ -23,8 +23,8 @@ app.config.update({
     'OIDC_CLIENT_SECRETS': 'client_secrets.json',
     'OIDC_ID_TOKEN_COOKIE_SECURE': False,
     'OIDC_REQUIRE_VERIFIED_EMAIL': False,
-    'OIDC_VALID_ISSUERS': ['http://localhost:8080/auth/realms/demo'],
-    'OIDC_OPENID_REALM': 'http://localhost:5000/oidc_callback'
+    'OIDC_VALID_ISSUERS': ['http://192.168.13.78:8000/auth/realms/demo'],
+    'OIDC_OPENID_REALM': 'http://192.168.13.78:5000/oidc_callback'
 })
 oidc = OpenIDConnect(app)
 
